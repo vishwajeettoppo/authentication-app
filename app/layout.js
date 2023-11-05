@@ -1,6 +1,5 @@
 import NextAuthProvider from '@/auth-provider'
 import './globals.css'
-import AppBar from '@/components/AppBar'
 
 export const metadata = {
   title: 'First Own ',
@@ -12,7 +11,6 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body>
         <NextAuthProvider>
-          <AppBar/>
           {children}
         </NextAuthProvider>
       </body>
